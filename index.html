@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | CSE Student 2027</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">PORTFOLIO</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-switch" id="theme-toggle" title="Toggle Dark/Light Mode">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span style="color: var(--primary);">Harshenii</span></h1>
+                    <div class="typing-container">
+                        <span id="typing-text"></span><span class="cursor">|</span>
+                    </div>
+                    <p style="margin-top: 1rem;">Computer Science Engineering Student | Class of 2027</p>
+                    <p>Aspiring Data Analyst & Database Specialist</p>
+                    <div class="hero-btns" style="justify-content: flex-start;">
+                        <a href="#projects" class="btn-primary">View My Work</a>
+                        <a href="HARSHENII 2.pdf" class="btn-primary"
+                            style="background: transparent; border: 2px solid var(--primary); color: var(--primary);">Download
+                            Resume</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="photo.jpeg" alt="Harshenii's Profile Photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                        alt="Tech Background" style="border-radius: 20px; width: 100%; box-shadow: var(--shadow);">
+                </div>
+                <div class="about-text">
+                    <p>I am a passionate Computer Science student at [Your University], graduating in 2027. My journey
+                        in tech is driven by a fascination with how data powers the modern world.</p>
+                    <p>Currently, I am specializing in <strong>Database Management</strong> and <strong>Data
+                            Analytics</strong>. I enjoy turning complex data into actionable insights and building
+                        robust database architectures.</p>
+                    <p>My goal is to bridge the gap between technical database administration and strategic data-driven
+                        decision making.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" style="background: transparent;">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card large">
+                    <i class="fas fa-database" style="font-size: 3rem; margin-bottom: 2rem;"></i>
+                    <h3>SQL & Databases</h3>
+                    <p style="font-size: 1.1rem;">MySQL, PostgreSQL, Database Design, Normalization, Query Optimization.
+                        I specialize in building robust and scalable backends.</p>
+                </div>
+                <div class="skill-card wide">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Analytics</h3>
+                    <p>Data Cleaning, Visualization (Tableau/PowerBI), Statistical Analysis.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>ML Basics</h3>
+                </div>
+                <div class="skill-card wide">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Modern Web Development</h3>
+                    <p>React.js, Node.js, RESTful APIs, Responsive Design.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud DB</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Visualization</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-filter"></i>
+                    <h3>Data Wrangling</h3>
+                    <p>Pandas, NumPy, Data Cleaning, ETL.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Big Data</h3>
+                    <p>Hadoop, Spark, NoSQL basics.</p>
+                </div>
+                <div class="skill-card wide">
+                    <i class="fas fa-file-excel"></i>
+                    <h3>Enterprise Tools</h3>
+                    <p>MS Excel (Advanced), GitHub, Jupyter Notebooks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Academic Projects</h2>
+            <div class="projects-grid">
+                <!-- project 1 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Library Management System</h3>
+                        <p>Developed a robust SQL database to manage books, members, and transactions with complex
+                            triggers and stored procedures.</p>
+                        <div class="tags">
+                            <span>SQL</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- project 2 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Bank management system </h3>
+                        <p>Developed a robust SQL database to manage details of customer and transactions with complex
+                            triggers and stored procedures.</p>
+                        <div class="tags">
+                            <span>SQL</span>
+                            <span>python</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- project 3 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>employee management system</h3>
+                        <div class="tags">
+                            <span>java</span>
+                            <span>SQL</span>
+                            <span>react.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications" style="background: white;">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certs-list">
+                <div class="cert-item">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-info">
+                        <h3>Google Data Analytics Professional Certificate</h3>
+                        <p>Coursera | 2024</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-info">
+                        <h3>Database Management Systems Specialization</h3>
+                        <p>IBM / edX | 2025</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <div class="cert-info">
+                        <h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
+                        <p>Microsoft | 2024</p>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <div class="cert-info">
+                        <h3>AWS Certified Cloud Practitioner</h3>
+                        <p>Amazon Web Services | 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>Feel free to reach out for collaborations or just a friendly chat about data!</p>
+                <div class="social-links">
+                    <a href="mailto:harshenii.m@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/harshenii-m-708a5a334?
+utm_source=share_via&utm_content=profile&utm_medium=mem
+ber_android" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <a href="mailto:your.email@example.com" class="btn-primary">Say Hello</a>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll to Top -->
+        <div class="scroll-top" id="scroll-top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Harshenii. Built with curiosity & code.</p>
+            </div>
+        </footer>
+</body>
+
+</html>
